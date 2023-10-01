@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <title>Tu Tatuaje Gratis</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Tatuaje Gratis - Ubicación</title>
     <meta name="description" content="Tu Tatuaje Gratis - Donde tu historia se convierte en arte. Ofrecemos tatuajes de alta calidad y servicios de tatuaje personalizados.">
     <meta name="keywords" content="tatuajes, arte corporal, estudio de tatuajes, tatuador profesional">
-    
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap" rel="stylesheet"> -->
-    
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> -->
-
     <script src="https://kit.fontawesome.com/0258810f6e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="normalice.css">
     <link rel="stylesheet" href="styles.css">
@@ -23,35 +14,33 @@
     <header>
         <h1>Tu Tatuaje Gratis</h1>
         <nav>
-            <i class="fa-brands fa-facebook-f" style="color: #C0C0C0;"></i>
-            <i class="fa-brands fa-instagram" style="color: #C0C0C0;"></i>
-            <i class="fa-brands fa-tiktok" style="color: #C0C0C0;"></i>
-            <i class="fa-solid fa-bars" style="color: #C0C0C0;"></i>
+            <div class="social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <i class="fa-solid fa-bars"></i>
         </nav>
     </header>
 
     <main>
-        <section id="home">
-            <img src="./assets/Logo.png" alt="Logo">
-            <button>Ver galeria</button>
+        <section id="hero">
+            <img class="logo" src="./assets/Logo.jpeg" alt="Logo">
+            <a href="#gallery">Ver galería</a>
         </section>
+
         <section id="welcome">
-            <div>
-                <span>
-                    <h2>¡Bienvenidos a Tu Tatuaje Gratis!</h2>
-                    <h3>Si nos dejan nos vamos a tatuar toda la vida 💋</h3>
-                </span>
-                <p>En Tu Tatuaje Gratis, transformamos tu historia en arte. Nuestros tatuadores apasionados y talentosos están listos para crear tatuajes impresionantes y significativos, grandes o pequeños, que reflejen tu personalidad. Únete a nosotros en este viaje creativo y descubre el mundo de posibilidades que ofrece el arte del tatuaje. ¡Te esperamos!</p>
-            </div>
-            <img src="./assets/image 4.png" alt="">
+            <span>
+                <h2>¡Bienvenidos a Tu Tatuaje Gratis!</h2>
+                <h3>Si nos dejan nos vamos a tatuar toda la vida 💋</h3>
+            </span>
+
+            <img class="photo" src="./assets/image 4.png" alt="">
+
+            <p>En Tu Tatuaje Gratis, transformamos tu historia en arte. Nuestros tatuadores apasionados y talentosos están listos para crear tatuajes impresionantes y significativos, grandes o pequeños, que reflejen tu personalidad. Únete a nosotros en este viaje creativo y descubre el mundo de posibilidades que ofrece el arte del tatuaje. ¡Te esperamos!</p>
         </section>
-        <section id="map">
-            <h2>Encuéntranos Aquí</h2>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3976.9426052311696!2d-74.1898!3d4.6043!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e46b4524ef3%3A0x68a7aaa64862a900!2sCl.%2068c%20Sur%20%2379-26%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1695604768400!5m2!1ses!2sco" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
-        <section id="galery">
+
+        <section id="gallery">
             <h2>Galería</h2>
             <div>
                 <img src="./assets/Photo1.png" alt="">
@@ -62,18 +51,27 @@
                 <img src="./assets/Photo6.png" alt="">
             </div>
         </section>
+
         <section id="blog">
-            <h2>Guía de Cuidados y Consejos</h2>
-            <div></div>
+            <h2>Como cuidar tu tatuaje?</h2>
+            <h3>Un tatuaje es una herida y hay que cuidarlo como tal</h3>
+            <ol>
+                <li>Lava el tatuaje con cuidado, utilizando agua tibia y jabón neutro o antiséptico.</li>
+                <li>Seca el tatuaje con una toalla limpia, presionando suavemente en lugar de frotar.</li>
+                <li>Una vez seco, aplica una fina capa de la crema recomendada por el tatuador; ¡el tatuaje debe estar siempre bien hidratado!</li>
+                <li>Evita arrancar las costras o rascar el tatuaje para una cicatrización adecuada.</li>                
+            </ol>
         </section>
     </main>
 
     <footer>
+        <section id="map">
+            <h2>Encuéntranos Aquí</h2>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3976.9426052311696!2d-74.1898!3d4.6043!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e46b4524ef3%3A0x68a7aaa64862a900!2sCl.%2068c%20Sur%20%2379-26%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1695604768400!5m2!1ses!2sco" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
         <p>&copy; 2023 Tu Tatuaje Gratis</p>
     </footer>
-
-    <!-- Comentarios para enlaces internos -->
-    <!-- <a href="#map">Ir al Mapa</a> -->
-
 </body>
 </html>

@@ -2,123 +2,179 @@
 @import url('https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-/* Estilos generales */
-body {
-    font-family: 'Times New Roman', serif;
-    margin: 0;
+:root{
+    --color-morado-dark: rgba(90, 28, 88, 0.75);
+    --color-morado-soft: rgba(107, 68, 123, 0.75);
+    --color-rojo: #800000;
+    --color-negro: rgba(0, 0, 0, 1);
+    --color-plata: #C0C0C0;
+    --color-cover: rgba(0, 0, 0, 0.75);
+    --font-tattoo: 'Miltonian Tattoo', cursive;
+    --font: 'Times New Roman', serif;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
     padding: 0;
-    background-color: #6B447B; /* Morado Oscuro */
-    color: #000000; /* Negro */
-    /* position: relative; */
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+h2{
+    font-family: 'Miltonian Tattoo', cursive;
+    font-size: 3.2rem;
+}
+
+h3{
+    color: #800000;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+p, ol{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: var(--color-rojo);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: var(--font-tattoo);
+    color: var(--color-negro);
+}
+
+body {
+    background-image: linear-gradient(
+        to bottom,
+        var(--color-morado-dark),
+        var(--color-morado-soft)),
+        url("./assets/pattern.avif"
+    );
 }
 
 header {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.75);
-    color: #C0C0C0;
-    padding: 12px;
-    font-size: 36px;
+    background-color: var(--color-cover);
+    color: var(--color-plata);
+    padding: 1.2rem;
     display: flex;
     justify-content: space-between;
-    /* position: absolute; */
-    /* width: 100%; */
+    align-items: center;
+    font-size: 1.6rem;
+    height: 10rem;
 }
 
-header h1 {
-    font-size: 36px;
-    /* color: #000000; Blanco */
-    /* margin-bottom: 10px; */
-    font-family: 'Miltonian Tattoo', cursive;
-    margin: 0;
+header img{
+    width: 20rem;
 }
 
-header p {
-    font-size: 24px;
-    color: #D69BB2; /* Color de Destacado */
-}
-
-nav {
-    /* Estilos para el menú de navegación si lo tienes */
-    width: 250px;
+header nav,
+header nav div{
     display: flex;
-    justify-content: space-evenly;
+    gap: 2rem;
 }
 
-#home{
-    height: calc(100vh - 65px);
-    background-image: url(./assets/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+header nav i{
+    font-size: 2.8rem;
+    cursor: pointer;
+}
+
+header .social{
+    display: none;
+}
+
+#hero{
+    height: calc(100vh - 10rem);
+    background-color: var(--color-cover);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-#home img{
-    width: 300px;
-    height: 300px;
-    /* margin: 0 auto; */
+#hero .logo{
+    width: 90%;
+    max-width: 40rem;
+    border-radius: 50rem;
 }
 
-#home button{
-    width: 280px;
-    background-color: #000000;
-    color: #FFFFFF;
-    border: none;
-    font-size: 36px;
+#hero a{
+    background-color: var(--color-negro);
+    color: var(--color-plata);
+    border: solid 1px var(--color-plata);
+    border-radius: 40px;
+    font-size: 32px;
     font-family: 'Miltonian Tattoo', cursive;
-    padding: 8px;
+    padding: 8px 24px;
+    cursor: pointer;
 }
 
 #welcome{
-    height: 100vh;
-    display: flex;
-    /* padding: 40px; */
-    justify-content: space-evenly;
-    align-items: center;
-    /* gap: 100px; */
-}
-
-#welcome div{
-    width: 44%;
-    height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    gap: 2rem;
+    /* margin: 0 auto; */
 }
 
-#welcome h2{
-    font-family: 'Miltonian Tattoo', cursive;
-    font-size: 48px;
-    margin: 0;
+#welcome .photo{
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
 }
 
-#welcome h3{
-    color: #800000;
-    font-size: 36px;
-    font-family: 'Playfair Display', serif;
+#gallery{
+    width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-#welcome p{
-    font-size: 24px;
-    font-family: 'Roboto', sans-serif;
+#gallery div{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
 }
 
-#welcome img{
-    width: 500px;
-    height: 600px;
+#gallery img{
+    width: 100%;
+    margin: 0 auto;
+    border: solid 4px var(--color-negro);
+}
+
+#blog{
+    width: 100%;
+    padding: 1.2rem;
+}
+
+#blog ol{
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+
+footer {
+    background-color: var(--color-cover);
+    color: var(--color-plata);
 }
 
 #map {
-    /* width: 100%; */
-    /* padding-left: 2%; */
-}
-
-#map h2{
-    font-family: 'Miltonian Tattoo', cursive;
-    font-size: 48px;
-    padding-left: 2%;
+    width: 100%;
+    padding: 1.2rem;
 }
 
 #map div{
@@ -126,53 +182,45 @@ nav {
     text-align: center;
 }
 
-/* #galery{
-    width: 100%;
-} */
-
-#galery h2{
-    font-family: 'Miltonian Tattoo', cursive;
-    font-size: 48px;
-    padding-left: 2%;
-}
-
-#galery div{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-#galery img{
-    margin: 0 auto;
-}
-
-#blog h2{
-    font-family: 'Miltonian Tattoo', cursive;
-    font-size: 48px;
-    padding-left: 2%;
-}
-
-#blog div{
-    width: 1100px;
-    height: 930px;
-    margin: 0 auto;
-    background-image: url(./assets/Cuidados.png);
-}
-
-footer {
+footer p{
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: #000000; /* Fondo negro */
-    color: #C0C0C0; /* Plata */
 }
 
-/* Estilos para enlaces (links) si los tienes */
-a {
-    color: #800000; /* Rojo Sangre para los enlaces */
-    text-decoration: none;
+@media (min-width: 768px) {
+    header .social{
+        display: flex;
+    }
+
+    #welcome{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        /* gap: 0; */
+    }
+
+    #welcome span{
+        grid-area: 1/1;
+    }
+
+    #welcome p{
+        grid-area: 2/1;
+    }
+
+    #welcome img{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    #gallery div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-a:hover {
-    text-decoration: underline;
+@media (min-width: 1024px) {
+    #gallery div{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
